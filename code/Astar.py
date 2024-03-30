@@ -1,10 +1,6 @@
-from collections import deque
+from dataDis import nameOfCity
+from dataDis import numberOfCities
 from model import flight_distances_dict
-from model import road_distances
-from model import nameOfCity
-from model import numberOfCities
-from model import dest_city
-import time
 class Graph:
 
     def __init__(self, road_distances):
@@ -106,9 +102,3 @@ class Graph:
         return None
     def get_each_path(self, path):
         print("Path")
-
-graph1 = Graph(road_distances)
-start_city = input("Start city: ")
-path = graph1.a_star_algorithm(start_city, dest_city)
-
-# graph1.get_each_path(path)
