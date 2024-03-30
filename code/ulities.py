@@ -1,0 +1,1 @@
+# this file has functions that get name of city, famous place in each city
