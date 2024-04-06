@@ -690,213 +690,208 @@ famousPlace = [
         ]
     },
     {
-        "name" : "",
-        "tourist_spots" : [
+        "name": "Nam Định",
+        "spots": [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Chùa Trấn Quốc",
+                "address": "Phường Lộc Vượng, thành phố Nam Định",
+                "description": "Đây là một ngôi chùa cổ có kiến trúc đẹp và mang giá trị lịch sử. Du khách có thể tham quan chùa, tìm hiểu về lịch sử và tín ngưỡng tại đây."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu di tích Vua Lý Thái Tổ",
+                "address": "Xã Hoàng Nam, huyện Hưng Hà",
+                "description": "Đây là nơi sinh thời của Vua Lý Thái Tổ - người sáng lập ra nhà Lý và người đầu tiên làm vua của Việt Nam. Du khách có thể tham quan di tích, tìm hiểu về lịch sử và văn hóa của vương triều Lý."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Chùa Phổ Minh",
+                "address": "Xã Mỹ Lộc, huyện Nam Trực",
+                "description": "Đây là một ngôi chùa cổ có kiến trúc độc đáo và nằm trong một khu rừng. Du khách có thể tham quan chùa, tìm hiểu về lịch sử và tín ngưỡng tại đây, và thưởng thức cảnh quan thiên nhiên xung quanh."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Biển Bãi Dứa",
+                "address": "Xã Xuân Thành, huyện Giao Thủy",
+                "description": "Đây là một bãi biển tuyệt đẹp với cát trắng, nước biển trong xanh và không khí trong lành. Du khách có thể tắm biển, thưởng thức hải sản tươi ngon và tham gia vào các hoạt động như lướt ván, câu cá và đi bộ dạo biển."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu di tích Phủ Dầy",
+                "address": "Xã Xứ Đông, huyện Hải Hậu",
+                "description": "Đây là một phủ cổ có tuổi đời hơn 300 năm và mang nét kiến trúc truyền thống. Du khách có thể tham quan phủ, tìm hiểu về lịch sử và văn hóa địa phương."
+            }
+        ]
+    },
+   {
+        "name": "Ninh Bình",
+        "spots": [
+            {
+                "name": "Tràng An",
+                "address": "Xã Trường Yên, Hoa Lư",
+                "description": "Tràng An là một di sản thiên nhiên và văn hóa được UNESCO công nhận. Khu du lịch Tràng An bao gồm hệ thống hang động, đỉnh núi và sông suối tự nhiên."
             },
+            {
+                "name": "Tam Cốc - Bích Động",
+                "address": "Xã Ninh Hải, Hoa Lư",
+                "description": "Tam Cốc là một hệ thống sông suối và động núi với cảnh quan hùng vĩ. Bích Động là một ngôi chùa cổ nằm trên núi, tạo nên một khung cảnh độc đáo."
+            },
+            {
+                "name": "Cúc Phương National Park",
+                "address": "Xã Nho Quan, huyện Nho Quan",
+                "description": "Cúc Phương là một công viên quốc gia nằm trong khu bảo tồn thiên nhiên Cúc Phương."
+            },
+            {
+                "name": "Hoa Lư",
+                "address": "Xã Trường Yên, Hoa Lư",
+                "description": "Hoa Lư là một di tích lịch sử quan trọng, từng là kinh đô của Việt Nam trong thời kỳ Trung Đại."
+            },
+            {
+                "name": "Hang Múa",
+                "address": "Xã Ninh Xuân, huyện Hoa Lư",
+                "description": "Hang Múa là một điểm đến phổ biến với khách du lịch nhờ cảnh quan núi non hùng vĩ và tầm nhìn toàn cảnh từ đỉnh núi."
+            }
         ]
     },
     {
-        "name" : "",
-        "tourist_spots" : [
+        "name": "Thanh Hóa",
+        "spots": [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu du lịch biển Sầm Sơn",
+                "address": "Thành phố Sầm Sơn",
+                "description": "Sầm Sơn là một trong những bãi biển nổi tiếng ở miền Trung Việt Nam."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu du lịch sinh thái Pu Luông",
+                "address": "Huyện Ba Thuộc",
+                "description": "Pu Luông là một khu vực sinh thái đồng cỏ và rừng núi."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu di tích Lam Kinh",
+                "address": "Xuân Lam, huyện Thọ Xuân",
+                "description": "Lam Kinh là nơi có di tích của triều đại Lê Soại và là nơi sinh thời của vua Lê Lợi."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu du lịch đền Kỳ Lừa",
+                "address": "Đông Văn, huyện Nông Cống",
+                "description": "Kỳ Lừa là một ngôi đền cổ có kiến trúc độc đáo và mang giá trị lịch sử."
+            }
+        ]
+    },
+     {
+        "name": "Nghệ An",
+        "spots": [
+            {
+                "name": "Biển Cửa Lò",
+                "address": "Thành phố Cửa Lò, Nghi Lộc",
+                "description": "Cửa Lò là một trong những bãi biển đẹp nhất ở miền Trung Việt Nam. Bãi biển này có cát mịn, nước biển trong xanh và khí hậu mát mẻ. Du khách có thể tắm biển, nghỉ ngơi trên bãi cát, thưởng thức hải sản tươi ngon và tham gia vào các hoạt động giải trí ngoài trời."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Khu di tích Kim Liên",
+                "address": "Xã Kim Liên, Nam Đàn",
+                "description": "Kim Liên là quê hương của Chủ tịch Hồ Chí Minh, người đã lãnh đạo cuộc cách mạng Việt Nam. Khu di tích Kim Liên bao gồm nhà sinh ra và lớn lên của Chủ tịch Hồ Chí Minh, cùng với các di tích khác như nhà thờ, đình, và bảo tàng."
             },
+            {
+                "name": "Khu du lịch sinh thái Pu Mat",
+                "address": "Huyện Con Cuông",
+                "description": "Pu Mat là một khu bảo tồn thiên nhiên nằm trên dãy núi Trường Sơn. Khu du lịch sinh thái Pu Mat có cảnh quan hoang sơ, rừng nguyên sinh và sự đa dạng sinh học phong phú. Du khách có thể tham gia vào các tour đi bộ, câu cá, leo núi để khám phá vẻ đẹp và sự giàu có của thiên nhiên."
+            },
+            {
+                "name": "Khu du lịch đền Quan Họ",
+                "address": "Xã Trung Sơn, Huyện Anh Sơn",
+                "description": "Đền Quan Họ nằm ở xã Trung Sơn, huyện Anh Sơn. Đây là nơi diễn ra các hoạt động nghệ thuật truyền thống của dân ca Quan Họ - một di sản văn hóa phi vật thể được UNESCO công nhận. Du khách có thể tham quan đền, nghe nhạc Quan Họ và tìm hiểu về nghệ thuật truyền thống của địa phương."
+            },
+            {
+                "name": "Khu du lịch sinh thái Hồ Thành Công",
+                "address": "Thành phố Vinh",
+                "description": "Khu du lịch sinh thái Hồ Thành Công có cảnh quan hữu tình với những đảo nhỏ, rừng xanh và không khí trong lành. Du khách có thể tham gia vào các hoạt động như tắm hồ, câu cá, thuyền kayak và thưởng thức món ăn địa phương."
+            }
         ]
     },
     {
-        "name" : "",
-        "tourist_spots" : [
+        "name": "Quảng Bình",
+        "spots": [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Hang Sơn Đoòng",
+                "address": "Vườn Quốc gia Phong Nha - Kẻ Bằng, xã Bố Trạch, huyện Bố Trạch",
+                "description": "Hang Sơn Đoòng là hang động lớn nhất thế giới và một trong những điểm đến du lịch nổi tiếng nhất ở Việt Nam. Điểm đặc biệt của hang Sơn Đoòng là không gian rộng lớn, hệ thống sông ngầm và cảnh quan kỳ ảo."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Vườn Quốc gia Phong Nha-Kẻ Bàng",
+                "address": "Xã Phong Nha, huyện Bố Trạch",
+                "description": "Vườn quốc gia Phong Nha-Kẻ Bàng là một di sản thiên nhiên thế giới được UNESCO công nhận. Vườn quốc gia này có hệ thống hang động phong phú, cảnh quan núi non đẹp mắt và sự đa dạng sinh học phong phú."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Biển Nước Trong",
+                "address": "Xã Cảnh Dương, huyện Quảng Ninh",
+                "description": "Biển Nước Trong là một bãi biển hoang sơ với cát trắng và nước biển trong xanh. Điều đặc biệt ở đây là biển có vụn đá lớn tạo nên những khung cảnh độc đáo và thu hút du khách đến tham quan, tắm biển và thưởng thức ẩm thực hải sản tươi ngon."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Đèo Ngang",
+                "address": "Đường quốc lộ 20, nối Quảng Bình với Đà Nẵng",
+                "description": "Đèo Ngang có cảnh quan hoang sơ, núi non bao quanh và đường đi uốn lượn quanh co. Từ đèo, du khách có thể ngắm nhìn toàn cảnh vùng núi rừng và thung lũng xung quanh."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
+                "name": "Bãi Đá Nhảy - Bãi Cháy",
+                "address": "Huyện Quảng Trạch",
+                "description": "Bãi Đá Nhảy - Bãi Cháy là nơi du khách có thể tắm biển, thư giãn trên cát và thưởng thức cảnh quan biển tuyệt đẹp."
+            }
         ]
     },
     {
-        "name" : "",
-        "tourist_spots" : [
+        "name": "Huế",
+        "spots": [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Cố đô Huế",
+                "address": "Thành phố Huế, Thừa Thiên Huế",
+                "description": "Cố đô Huế là một di sản thế giới được UNESCO công nhận. Nơi này bao gồm Cung điện Hoàng Gia, Nghĩa Đình, Tự Đức Tomb và Khải Định Tomb. Du khách có thể khám phá kiến trúc hoàng gia đặc trưng, tìm hiểu về lịch sử và văn hóa của triều đại Nguyễn và tham quan các công trình kiến trúc độc đáo."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Chùa Thiên Mụ",
+                "address": "Số 1 Thiên Mụ, phường Hương Long, Huế, Thừa Thiên Huế",
+                "description": "Chùa Thiên Mụ là một ngôi chùa nổi tiếng đặc trưng cho Huế. Với kiến trúc đẹp mắt và vị trí trên đồi Hà Khê, chùa Thiên Mụ là biểu tượng của thành phố. Du khách có thể tham quan chùa, ngắm nhìn cảnh quan sông Hương và tìm hiểu về tín ngưỡng Phật giáo ở địa phương."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Cầu Trường Tiền",
+                "address": "Sông Hương, kết nối đường Trần Hưng Đạo và Bà Triệu, thành phố Huế, Thừa Thiên Huế",
+                "description": "Cầu Trường Tiền là một cây cầu nổi tiếng nằm trên sông Hương, kết nối trung tâm thành phố Huế. Cầu được xây dựng vào thế kỷ 19, có kiến trúc đẹp và là điểm đến lý tưởng để ngắm nhìn cảnh quan sông Hương và thành phố Huế."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Kinh thành Huế",
+                "address": "Đường Lê Đại Hành, Huế, Thừa Thiên Huế",
+                "description": "Kinh thành Huế là một khu phức hợp kiến trúc bao gồm các cung điện, cổng thành và công trình lịch sử khác. Điểm đặc biệt của Kinh thành là cầu Nhật Lệ, nơi được xem là biểu tượng của thành phố. Du khách có thể tham quan Kinh thành, tìm hiểu về lịch sử vương triều và chiêm ngưỡng kiến trúc đặc trưng."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
+                "name": "Chợ Đông Ba",
+                "address": "Số 2 Trần Hưng Đạo, Phú Hội, Huế, Thừa Thiên Huế",
+                "description": "Chợ Đông Ba là một chợ truyền thống nổi tiếng ở Huế. Đây là nơi du khách có thể tham quan và mua sắm các sản phẩm địa phương như áo dài, đèn lồng, nón lá và các đặc sản Huế."
+            }
         ]
     },
     {
-        "name" : "",
-        "tourist_spots" : [
+        "name": "Đà Nẵng",
+        "spots": [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Bán đảo Sơn Trà",
+                "address": "Phường Thọ Quang, Sơn Trà, Đà Nẵng",
+                "description": "Bán đảo Sơn Trà là một bán đảo xanh tươi nằm ngay gần trung tâm thành phố Đà Nẵng. Nơi đây nổi tiếng với cảnh quan thiên nhiên đẹp, rừng nguyên sinh, bãi biển tuyệt đẹp và ngọn đèo Linh Ứng với tượng Phật Bà Quan Âm cao 67 mét."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Bãi biển Mỹ Khê",
+                "address": "Phường Mỹ An, Ngũ Hành Sơn, Đà Nẵng",
+                "description": "Bãi biển Mỹ Khê là một trong những bãi biển đẹp nhất và nổi tiếng nhất ở Đà Nẵng. Bãi biển này có cát trắng mịn, nước biển trong xanh và là nơi lý tưởng để tắm biển, nghỉ ngơi và thưởng thức các món hải sản tươi ngon."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Ngũ Hành Sơn (Năm Ngũ)",
+                "address": "Đường Huyền Trân Công Chúa, Ngũ Hành Sơn, Đà Nẵng",
+                "description": "Ngũ Hành Sơn là một nhóm núi đá vôi nổi tiếng nằm cách Đà Nẵng khoảng 20 phút đi xe. Mỗi ngọn núi có tên gọi riêng như Thủy Sơn (núi nước), Mộc Sơn (núi gỗ), Hoả Sơn (núi lửa), Kim Sơn (núi kim) và Thổ Sơn (núi đất). Du khách có thể thăm quan các hang động, tham gia leo núi, và ngắm nhìn cảnh quan tuyệt đẹp của vùng đất này."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name": "Cầu Rồng",
+                "address": "Sông Hàn, Đà Nẵng",
+                "description": "Cầu Rồng là một cây cầu nổi tiếng và biểu tượng của Đà Nẵng. Cây cầu này được thiết kế độc đáo với hình dáng rồng và về đêm, cầu phát sáng với đèn LED đa màu. Du khách có thể ngắm nhìn cầu Rồng từ bờ sông Hàn và thưởng thức màn trình diễn ánh sáng đẹp mắt vào buổi tối."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
+                "name": "Bà Nà Hills",
+                "address": "Đường Hòa Phú, Hòa Ninh, Hòa Vang, Đà Nẵng",
+                "description": "Bà Nà Hills là một khu du lịch nằm trên đỉnh núi Bà Nà, cách Đà Nẵng khoảng 40 phút đi xe. Nơi này có khí hậu mát mẻ và nhiều hoạt động giải trí như cáp treo, công viên giải trí, vườn hoa và lâu đài Pháp. Du khách có thể tận hưởng không gian xanh mát, ngắm nhìn toàn cảnh thành phố từ độ cao và tham gia các trò chơi giải trí."
+            }
         ]
-    },
-    {
-        "name" : "",
-        "tourist_spots" : [
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-        ]
-    },
-    {
-        "name" : "",
-        "tourist_spots" : [
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-        ]
-    },
+    }
 ]
