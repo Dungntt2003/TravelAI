@@ -1,20 +1,29 @@
 # this file has functions that get name of city, famous place in each city
 import time
-
-
+from dataFamousPlace import famousPlace
 def getPath(path):
     if not path:
         print("Path is empty.")
         return
     
-    print("Path:")
+    print(f"Path: {path}")
     for city in path:
+        # index_current_city = path.index(city)
         print(city)
-        time.sleep(30)  # Pause for 30 seconds between printing each city
+        printFamousPlace(city)
+        # if index_current_city > 0:
+        #     choice = input("Do you want to go to the previous city : y/n?")
+        #     if choice == 'y':
+        #         previous_city = goBack(path,city)
+        #         print(previous_city)
+        #         printFamousPlace(previous_city)
+        #         time.sleep(5)
+        #         print(city)
+        #         printFamousPlace(city)
+
+        
 
 def printFamousPlace(city_name):
-    from dataFamousPlace import famousPlace
-
     for city in famousPlace:
         if city['name'] == city_name:
             print(f"Famous places in {city['name']}:\n")
@@ -23,6 +32,7 @@ def printFamousPlace(city_name):
                 print(f"Address: {spot['address']}")
                 print(f"Description: {spot['description']}")
                 print('----------------------------------------------------------------')
+                time.sleep(5)
             return
 
     print(f"No information found about {city_name}.")
@@ -46,14 +56,5 @@ def goBack(path, city):
         print(f"The city {city} is not found in the path.")
         return None
 
-#test
-
-# printFamousPlace
-# current_city = input("Current city: ")
-# printFamousPlace(current_city)
-
-# goBack
-#path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "Ho Chi Minh"]
-#current_city = "Da Nang"
-#previous_city = goBack(path, current_city)
-#getPath(path)
+path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "TP Ho Chi Minh"]
+getPath(path)

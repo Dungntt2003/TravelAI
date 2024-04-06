@@ -300,7 +300,7 @@ famousPlace = [
         ]
     },
     {
-        "name": "Lạng Sơn",
+        "name": "Lang Son",
         "tourist_spots": [
             {
                 "name": "Thành cổ Lạng Sơn",
@@ -335,7 +335,7 @@ famousPlace = [
         ]
     },
     {
-        "name": "Hà Giang",
+        "name": "Ha Giang",
         "tourist_spots": [
             {
                 "name": "Đèo Mã Pí Lèng",
@@ -365,7 +365,7 @@ famousPlace = [
         ]
     },
     {
-        "name": "Lào Cai",
+        "name": "Lao Cai",
         "tourist_spots": [
             {
                 "name": "Sa Pa",
@@ -400,7 +400,7 @@ famousPlace = [
         ]
     },
     {
-        "name": "Lai Châu",
+        "name": "Lai Chau",
         "tourist_spots": [
             {
                 "name": "Hồ Than Uyên",
@@ -435,7 +435,7 @@ famousPlace = [
         ]
     },
     {
-        "name": "Điện Biên",
+        "name": "Dien Bien",
         "tourist_spots": [
             {
                 "name": "Điện Biên Phủ",
@@ -470,7 +470,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Sơn La",
+        "name" : "Son La",
         "tourist_spots" : [
             {
                 "name" : "Hồ Sơn La",
@@ -505,7 +505,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Phú Thọ",
+        "name" : "Phu Tho",
         "tourist_spots" : [
             {
                 "name" : "Đền Hùng",
@@ -540,7 +540,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Hà Nội",
+        "name" : "Ha Noi",
         "tourist_spots" : [
             {
                 "name" : "Hồ Hoàn Kiếm",
@@ -575,7 +575,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Quảng Ninh",
+        "name" : "Quang Ninh",
         "tourist_spots" : [
             {
                 "name" : "Vịnh Hạ Long",
@@ -610,7 +610,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Hải Dương",
+        "name" : "Hai Duong",
         "tourist_spots" : [
             {
                 "name" : "Chùa Bằng",
@@ -635,7 +635,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Hải Phòng",
+        "name" : "Hai Phong",
         "tourist_spots" : [
             {
                 "name" : "Đảo Cát Bà",
@@ -660,7 +660,7 @@ famousPlace = [
         ]
     },
     {
-        "name" : "Thái Bình",
+        "name" : "Thai Binh",
         "tourist_spots" : [
             {
                 "name" : "Chùa Keo",
@@ -690,8 +690,8 @@ famousPlace = [
         ]
     },
     {
-        "name": "Nam Định",
-        "spots": [
+        "name": "Nam Dinh",
+        "tourist_spots": [
             {
                 "name": "Chùa Trấn Quốc",
                 "address": "Phường Lộc Vượng, thành phố Nam Định",
@@ -720,8 +720,8 @@ famousPlace = [
         ]
     },
    {
-        "name": "Ninh Bình",
-        "spots": [
+        "name": "Ninh Binh",
+        "tourist_spots": [
             {
                 "name": "Tràng An",
                 "address": "Xã Trường Yên, Hoa Lư",
@@ -750,8 +750,8 @@ famousPlace = [
         ]
     },
     {
-        "name": "Thanh Hóa",
-        "spots": [
+        "name": "Thanh Hoa",
+        "tourist_spots": [
             {
                 "name": "Khu du lịch biển Sầm Sơn",
                 "address": "Thành phố Sầm Sơn",
@@ -775,8 +775,8 @@ famousPlace = [
         ]
     },
      {
-        "name": "Nghệ An",
-        "spots": [
+        "name": "Nghe An",
+        "tourist_spots": [
             {
                 "name": "Biển Cửa Lò",
                 "address": "Thành phố Cửa Lò, Nghi Lộc",
@@ -805,8 +805,8 @@ famousPlace = [
         ]
     },
     {
-        "name": "Quảng Bình",
-        "spots": [
+        "name": "Quang Binh",
+        "tourist_spots": [
             {
                 "name": "Hang Sơn Đoòng",
                 "address": "Vườn Quốc gia Phong Nha - Kẻ Bằng, xã Bố Trạch, huyện Bố Trạch",
@@ -835,8 +835,8 @@ famousPlace = [
         ]
     },
     {
-        "name": "Huế",
-        "spots": [
+        "name": "Hue",
+        "tourist_spots": [
             {
                 "name": "Cố đô Huế",
                 "address": "Thành phố Huế, Thừa Thiên Huế",
@@ -865,8 +865,8 @@ famousPlace = [
         ]
     },
     {
-        "name": "Đà Nẵng",
-        "spots": [
+        "name": "Da Nang",
+        "tourist_spots": [
             {
                 "name": "Bán đảo Sơn Trà",
                 "address": "Phường Thọ Quang, Sơn Trà, Đà Nẵng",
