@@ -5,9 +5,21 @@ def getPath(path):
     print("Path")
 
 
-def printFamousPlace(city):
-     #viết hàm ở đây
-    print("Famous place")
+def printFamousPlace(city_name):
+    from dataFamousPlace import famousPlace
+
+    for city in famousPlace:
+        if city['name'] == city_name:
+            print(f"Famous places in {city['name']}:\n")
+            for spot in city['tourist_spots']:
+                print(f"Tourist spot: {spot['name']}")
+                print(f"Address: {spot['address']}")
+                print(f"Description: {spot['description']}")
+                print('----------------------------------------------------------------')
+            return
+
+    print(f"No information found about {city_name}.")
+
 
 def goBack(path, city):
     if not path:
@@ -28,6 +40,13 @@ def goBack(path, city):
         return None
 
 #test
+#getPath 
+
+# printFamousPlace
+# current_city = input("Current city: ")
+# printFamousPlace(current_city)
+
+# goBack
 #path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "Ho Chi Minh"]
 #current_city = "Da Nang"
 #previous_city = goBack(path, current_city)
