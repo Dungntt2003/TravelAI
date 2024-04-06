@@ -1,9 +1,16 @@
 # this file has functions that get name of city, famous place in each city
-def getPath(path):
-    # viết hàm ở đây
-    # path là mảng, yêu cầu là lần lượt in ra các thành phố mà thời gian in cách nhau khoảng lâu 30s
-    print("Path")
+import time
 
+
+def getPath(path):
+    if not path:
+        print("Path is empty.")
+        return
+    
+    print("Path:")
+    for city in path:
+        print(city)
+        time.sleep(30)  # Pause for 30 seconds between printing each city
 
 def printFamousPlace(city_name):
     from dataFamousPlace import famousPlace
@@ -40,7 +47,6 @@ def goBack(path, city):
         return None
 
 #test
-#getPath 
 
 # printFamousPlace
 # current_city = input("Current city: ")
@@ -50,3 +56,4 @@ def goBack(path, city):
 #path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "Ho Chi Minh"]
 #current_city = "Da Nang"
 #previous_city = goBack(path, current_city)
+#getPath(path)
