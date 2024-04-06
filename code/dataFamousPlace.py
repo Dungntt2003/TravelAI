@@ -470,212 +470,222 @@ famousPlace = [
         ]
     },
     {
-        "name" : "",
+        "name" : "Sơn La",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Hồ Sơn La",
+                "address" : "Trung tâm thành phố Sơn La",
+                "description" : "Với không gian yên tĩnh và nước hồ trong xanh, đây là một nơi lý tưởng để thư giãn và tận hưởng phong cảnh đẹp."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chợ Mường",
+                "address" : "Thị trấn Mường La",
+                "description" : "Du khách có thể khám phá và mua sắm các sản phẩm địa phương, như đồ thủ công mỹ nghệ và đặc sản."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Khu du lịch Đại Yên",
+                "address" : "Thị trấn Hát Lót, huyện Mường La",
+                "description" : "Điểm đến này có cảnh quan hữu tình với đồng cỏ xanh mướt, suối nước trong và cánh đồng hoa đẹp mắt."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Hồ Đà River Park",
+                "address" : "Huyện Mộc Châu",
+                "description" : "Du khách có thể tham quan vườn hoa, tắm mát trong hồ nước và tham gia các hoạt động như câu cá, đi thuyền kayak."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Công viên Quốc gia Pù Luông",
+                "address" : "Huyện Ba Vì",
+                "description" : "Điểm đến này có cảnh quan tuyệt đẹp với rừng núi, thác nước và những bản làng truyền thống."
+            },
+            {
+                "name" : "Núi Mộc Châu",
+                "address" : "Huyện Mộc Châu",
+                "description" : "Nổi tiếng với vẻ đẹp hoang sơ của núi rừng và đồng cỏ. Du khách có thể leo núi để ngắm cảnh, tham gia trekking hoặc thăm các bản làng dân tộc."
             },
         ]
     },
     {
-        "name" : "",
+        "name" : "Phú Thọ",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Đền Hùng",
+                "address" : "Xã Hy Cương, huyện Phú Thọ",
+                "description" : "Đền Hùng là nơi diễn ra lễ hội lớn nhất trong năm - Lễ hội Đền Hùng. Đền Hùng là nơi tưởng nhớ và thờ cúng các vị vua Hùng - những người sáng lập và bảo vệ đất nước. Du khách có thể khám phá kiến trúc độc đáo và tham gia các hoạt động tôn giáo và văn hóa tại đây."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Núi Bà Đen",
+                "address" : "Huyện Đoan Hùng",
+                "description" : "Núi Bà Đen, hay còn gọi là Núi Châu Thới. Điểm đến này có quang cảnh thiên nhiên tuyệt đẹp với ngọn núi cao và rừng xanh. Du khách có thể leo núi để ngắm cảnh, tham gia các hoạt động như trekking và thăm chùa Bà Đen trên đỉnh núi."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chùa Hương",
+                "address" : "Xã Mỹ Đa, huyện Lâm Thao",
+                "description" : "Đây là một ngôi chùa cổ có kiến trúc đặc biệt và được coi là một trong những điểm hành hương quan trọng ở Phú Thọ."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Thành cổ Hùng Vương",
+                "address" : "Xã Co Tư, huyện Lâm Thao",
+                "description" : "Đây là một di chỉ khảo cổ quan trọng, nơi được cho là nơi các vua Hùng đã cai trị và xây dựng đất nước."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Đền Bác",
+                "address" : "Thị trấn Việt Trì",
+                "description" : "Là một ngôi đền thờ Bác Hồ - người lãnh đạo vĩ đại của Việt Nam. Du khách có thể tham quan và khám phá về cuộc đời và công lao của Bác Hồ."
+            },
+            {
+                "name" : "Đền Bà Chúa Kho",
+                "address" : "Huyện Thanh Ba",
+                "description" : "Đây là một ngôi đền thờ Đức Bà Thanh Mẫu và được coi là một trong những ngôi đền quan trọng ở vùng núi Tây Bắc."
             },
         ]
     },
     {
-        "name" : "",
+        "name" : "Hà Nội",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Hồ Hoàn Kiếm",
+                "address" : "Phường Hàng Trống, quận Hoàn Kiếm",
+                "description" : "Hồ Hoàn Kiếm là một hồ nằm ở trung tâm thành phố và được coi là biểu tượng của Hà Nội. Du khách có thể tham quan Ngọc Sơn Temple nằm trên đảo trong hồ và ngắm cảnh hồ vào buổi tối khi cây cầu Thê Húc và đền Rùa được chiếu sáng."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Phố cổ Hà Nội",
+                "address" : "Phường Hàng Buồm, quận Hoàn Kiếm",
+                "description" : "Phố cổ là một khu vực cổ xưa với những ngôi nhà gỗ truyền thống và những con phố hẹp đáng yêu. Du khách có thể khám phá các cửa hàng, chợ đêm, và thưởng thức ẩm thực đường phố tại đây."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Văn Miếu - Quốc Tử Giám",
+                "address" : "Số 58 Quốc Tử Giám, phường Văn Chương, quận Đống Đa",
+                "description" : "Văn Miếu - Quốc Tử Giám là một ngôi đền văn hóa lịch sử tôn quốc nằm ở trung tâm thành phố. Đây là nơi thờ cúng và là trường đại học đầu tiên của Việt Nam. Du khách có thể khám phá kiến trúc đẹp và tìm hiểu về lịch sử giáo dục của đất nước."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Hồ Tây",
+                "address" : "Phường Yên Phụ, quận Tây Hồ",
+                "description" : "Hồ Tây là một hồ tự nhiên lớn nằm ở phía tây Hà Nội. Du khách có thể đi thuyền trên hồ, thưởng thức các món hải sản tươi ngon và tham quan các công viên và khu vui chơi giải trí gần đó."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Bảo tàng Dân tộc học Việt Nam",
+                "address" : "Số 1 Nguyễn Văn Huyên, quận Cầu Giấy",
+                "description" : "Bảo tàng Dân tộc học Việt Nam là một bảo tàng quan trọng tại Hà Nội, trưng bày và giới thiệu về văn hóa, truyền thống và đa dạng dân tộc của Việt Nam."
+            },
+            {
+                "name" : "Lăng Chủ tịch Hồ Chí Minh",
+                "address" : "Số 25 Ngọc Hà, quận Ba Đình",
+                "description" : "Lăng Chủ tịch Hồ Chí Minh là nơi lưu giữ thi hài của Chủ tịch Hồ Chí Minh, người đồng sáng lập và lãnh đạo cách mạng Việt Nam. Du khách có thể thăm quan lăng mộ và tưởng niệm vị lãnh tụ vĩ đại."
             },
         ]
     },
     {
-        "name" : "",
+        "name" : "Quảng Ninh",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Vịnh Hạ Long",
+                "address" : "Thành phố Hạ Long",
+                "description" : "Vịnh Hạ Long là biểu tượng du lịch của Quảng Ninh và là một trong những điểm đến hàng đầu của Việt Nam. Với hàng nghìn đảo đá và thủy triều độc đáo, du khách có thể tham gia vào các chuyến du thuyền, tham quan hang động, tắm biển và thưởng thức cảnh quan tuyệt đẹp của vịnh."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Đảo Tuần Châu",
+                "address" : "Xã Tuần Châu, huyện Đảo Tuần Châu",
+                "description" : "Được biết đến với bãi biển đẹp và các khu nghỉ dưỡng sang trọng. Du khách có thể tham gia vào các hoạt động như lướt ván, đánh golf, tắm biển và thưởng thức ẩm thực địa phương."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Đảo Cô Tô",
+                "address" : "Huyện Cô Tô",
+                "description" : "Nơi đây có bãi biển tuyệt đẹp, rạn san hô và động thiên đường. Du khách có thể tham gia lặn biển, câu cá, thăm các làng chài truyền thống và thưởng thức hải sản tươi ngon."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Khu du lịch Yên Tử",
+                "address" : "Huyện Uông Bí",
+                "description" : "Nổi tiếng là một địa điểm hành hương quan trọng của người Phật giáo. Du khách có thể leo núi, tham quan chùa Yên Tử và khám phá cảnh quan thiên nhiên tuyệt đẹp."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Khu du lịch động Thiên Cung",
+                "address" : "Đảo Đầu Gỗ, quần đảo Cát Bà, Xã Hạ Long, thành phố Hạ Long",
+                "description" : "Là một điểm đến phổ biến trong vùng. Du khách có thể khám phá những hang động đẹp, tham quan các hình thạch nhũ và tận hưởng không gian tự nhiên yên bình."
+            },
+            {
+                "name" : "Khu du lịch đảo Ngọc Vừng",
+                "address" : "Xã Ngọc Vừng, huyện Vân Đồn",
+                "description" : "Nơi đây có những bãi biển hoang sơ, nước biển trong xanh và cảnh quan thiên nhiên hùng vĩ. Du khách có thể tham gia vào các hoạt động như cắm trại, câu cá và khám phá đảo."
             },
         ]
     },
     {
-        "name" : "",
+        "name" : "Hải Dương",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chùa Bằng",
+                "address" : "Thị trấn Chí Linh, huyện Chí Linh",
+                "description" : "Nơi đây có kiến trúc đẹp và tĩnh lặng, thu hút nhiều du khách đến tham quan và tham gia các hoạt động tâm linh."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Thắng cảnh Đồng Nội",
+                "address" : "Huyện Nam Sách",
+                "description" : "Nơi đây có không gian xanh mát, với nhiều loại hoa và cây cảnh đẹp, là địa điểm lý tưởng để thư giãn và thưởng thức thiên nhiên."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chùa Kinh Dương Vương",
+                "address" : "Thị trấn Kinh Dương, huyện Kinh Môn",
+                "description" : "Đây là một ngôi chùa có giá trị lịch sử và văn hóa, được xem là nơi linh thiêng và thu hút đông đảo phật tử và du khách."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chùa Kênh Đào",
+                "address" : "Thị trấn Cẩm Giang, huyện Cẩm Giang",
+                "description" : "Đây là một ngôi chùa cổ, có kiến trúc độc đáo và tượng Phật đẹp mắt. Du khách có thể tham quan chùa, tìm hiểu về lịch sử và tín ngưỡng tại đây."
             },
         ]
     },
     {
-        "name" : "",
+        "name" : "Hải Phòng",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Đảo Cát Bà",
+                "address" : "Huyện Cát Hải, thành phố Hải Phòng",
+                "description" : "Đảo Cát Bà là một trong những điểm đến du lịch phổ biến ở Hải Phòng. Nơi đây có cảnh quan thiên nhiên tuyệt đẹp, bãi biển hoang sơ, rừng núi và hang động. Du khách có thể tham gia vào các hoạt động như tắm biển, lặn biển, thám hiểm hang động và khám phá vườn quốc gia Cát Bà."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Vịnh Lan Hạ",
+                "address" : "Huyện Cát Hải, thành phố Hải Phòng",
+                "description" : "Vịnh Lan Hạ là một khu du lịch nằm cách trung tâm thành phố Hải Phòng khoảng 30 km. Nơi đây có cảnh quan đẹp, bãi biển, đảo nhỏ và các khu nghỉ dưỡng sang trọng. Du khách có thể tham gia vào các hoạt động như tắm biển, lướt ván, tham quan đảo và thưởng thức ẩm thực địa phương."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chùa Đồ Sơn",
+                "address" : "Quận Đồ Sơn, thành phố Hải Phòng",
+                "description" : "Đây là một ngôi chùa cổ có kiến trúc đẹp và nằm gần bãi biển Đồ Sơn. Du khách có thể tham quan chùa, tìm hiểu về lịch sử và tín ngưỡng tại đây, và thưởng thức cảnh quan biển."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
-            },
-            {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Khu du lịch Dinh Độc Lập",
+                "address" : "Số 7 Điện Biên Phủ, quận Hồng Bàng, thành phố Hải Phòng",
+                "description" : "Dinh Độc Lập là một di tích lịch sử quan trọng ở Hải Phòng. Đây là một dinh thự được xây dựng vào thời kỳ thuộc địa Pháp và có kiến trúc độc đáo. Du khách có thể tham quan và tìm hiểu về lịch sử của khu vực."
             },
         ]
     },
     {
-        "name" : "",
+        "name" : "Thái Bình",
         "tourist_spots" : [
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Chùa Keo",
+                "address" : "Xã Duy Nhất, huyện Vũ Thư",
+                "description" : "Nơi đây có kiến trúc độc đáo và cảnh quan tĩnh lặng. Chùa Keo nổi tiếng với lễ hội đền Hùng diễn ra vào ngày mùng 10 tháng 3 âm lịch hàng năm."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Công viên nước Đại Đồng",
+                "address" : "Xã Đại Đồng, huyện Vũ Thư",
+                "description" : "Đây là một công viên giải trí nước lớn với nhiều trò chơi và hoạt động thú vị như trượt nước, bơi lội và thể thao nước."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Khu du lịch sinh thái Thiên Trường",
+                "address" : "Xã Thiên Trường, huyện Kiến Xương",
+                "description" : "Đây là một khu vườn sinh thái rộng lớn với đồng cỏ, ao hồ và rừng cây. Du khách có thể tham gia vào các hoạt động như câu cá, đi thuyền, dạo chơi và thưởng thức ẩm thực địa phương."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Đền Kính Thiên",
+                "address" : "Xã Thanh Bình, huyện Quỳnh Phụ",
+                "description" : "Đây là một ngôi đền có giá trị lịch sử và kiến trúc đẹp. Du khách có thể tham quan đền, tìm hiểu về lịch sử và tín ngưỡng tại đây."
             },
             {
-                "name" : "",
-                "address" : "",
-                "description" : ""
+                "name" : "Làng Đình Bảng",
+                "address" : "Xã Đình Bảng, huyện Từ Sơn",
+                "description" : "Đây là một làng cổ có kiến trúc truyền thống và di tích lịch sử. Du khách có thể tham quan làng, tham gia vào các hoạt động truyền thống và khám phá văn hóa địa phương."
             },
         ]
     },
