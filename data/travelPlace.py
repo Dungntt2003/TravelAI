@@ -1,1 +1,0 @@
-# has information about the famous place in each city of the list cities

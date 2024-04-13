@@ -56,5 +56,5 @@ def goBack(path, city):
         print(f"The city {city} is not found in the path.")
         return None
 
-path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "TP Ho Chi Minh"]
-getPath(path)
+# path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "TP Ho Chi Minh"]
+# getPath(path)
