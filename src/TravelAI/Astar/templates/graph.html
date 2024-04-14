@@ -1,11 +1,218 @@
+<!-- graph.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graph</title>
+    <title>DFS Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <style>
+      .node {
+        fill: #e01717;
+        stroke: #fff;
+      }
+
+      .node.active {
+        fill: orange;
+      }
+
+      .link {
+        stroke: #999;
+        stroke-width: 2px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Travel AI</h1>
+    <svg id="graph"></svg>
+
+    <script>
+      // var nodes = [
+      //   { id: 0, name: "Node 0" },
+      //   { id: 1, name: "Node 1" },
+      //   { id: 2, name: "Node 2" },
+      //   { id: 3, name: "Node 3" },
+      //   { id: 4, name: "Node 4" },
+      //   { id: 5, name: "Node 5" },
+      //   { id: 6, name: "Node 6" },
+      //   { id: 7, name: "Node 7" },
+      //   { id: 8, name: "Node 8" },
+      //   { id: 9, name: "Node 9" },
+      // ];
+
+      // var links = [
+      //   { source: 0, target: 1 },
+      //   { source: 0, target: 2 },
+      //   { source: 1, target: 3 },
+      //   { source: 1, target: 4 },
+      //   { source: 2, target: 5 },
+      //   { source: 2, target: 6 },
+      //   { source: 3, target: 7 },
+      //   { source: 3, target: 8 },
+      //   { source: 4, target: 9 },
+      // ];
+
+      // // Kích thước đồ thị
+      // var width = window.innerWidth - 100;
+      // var height = window.innerHeight - 100;
+
+      // // Tạo đối tượng SVG
+      // var svg = d3.select("#graph").attr("width", width).attr("height", height);
+
+      // // Tạo đối tượng force layout
+      // var simulation = d3
+      //   .forceSimulation(nodes)
+      //   .force("charge", d3.forceManyBody().strength(-100))
+      //   .force("link", d3.forceLink(links).distance(50))
+      //   .force("center", d3.forceCenter(width / 2, height / 2));
+
+      // // Vẽ liên kết
+      // var link = svg
+      //   .selectAll(".link")
+      //   .data(links)
+      //   .enter()
+      //   .append("line")
+      //   .attr("class", "link");
+
+      // // Vẽ node
+      // var node = svg
+      //   .selectAll(".node")
+      //   .data(nodes)
+      //   .enter()
+      //   .append("g")
+      //   .attr("class", "node");
+
+      // // Vẽ hình tròn cho node
+      // node
+      //   .append("circle")
+      //   .attr("r", 25)
+      //   .attr("fill", "#e01717")
+      //   .attr("stroke", "#fff");
+
+      // // Vẽ tên trong node
+      // node
+      //   .append("text")
+      //   .attr("dx", 0)
+      //   .attr("dy", 4)
+      //   .attr("text-anchor", "middle")
+      //   .text(function (d) {
+      //     return d.name;
+      //   });
+
+      // // Cập nhật vị trí node
+      // simulation.on("tick", function () {
+      //   link
+      //     .attr("x1", function (d) {
+      //       return d.source.x;
+      //     })
+      //     .attr("y1", function (d) {
+      //       return d.source.y;
+      //     })
+      //     .attr("x2", function (d) {
+      //       return d.target.x;
+      //     })
+      //     .attr("y2", function (d) {
+      //       return d.target.y;
+      //     });
+
+      //   node.attr("transform", function (d) {
+      //     return "translate(" + d.x + "," + d.y + ")";
+      //   });
+      // });
+      var data = {
+        nodes: [
+          { id: "Hanoi", x: 100, y: 200 },
+          { id: "Nam Dinh", x: 250, y: 400 },
+          { id: "Nha Trang", x: 500, y: 600 },
+        ],
+        links: [
+          { source: "Hanoi", target: "Nam Dinh" },
+          { source: "Hanoi", target: "Nha Trang" },
+        ],
+      };
+
+      var width = 800;
+      var height = 800;
+
+      var svg = d3
+        .select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      var links = svg
+        .selectAll(".link")
+        .data(data.links)
+        .enter()
+        .append("line")
+        .attr("class", "link")
+        .attr("x1", function (d) {
+          return data.nodes.find((node) => node.id === d.source).x;
+        })
+        .attr("y1", function (d) {
+          return data.nodes.find((node) => node.id === d.source).y;
+        })
+        .attr("x2", function (d) {
+          return data.nodes.find((node) => node.id === d.target).x;
+        })
+        .attr("y2", function (d) {
+          return data.nodes.find((node) => node.id === d.target).y;
+        })
+        .style("stroke", "navy")
+        .style("stroke-width", 2);
+
+      var nodes = svg
+        .selectAll(".node")
+        .data(data.nodes)
+        .enter()
+        .append("circle")
+        .attr("class", "node")
+        .attr("cx", function (d) {
+          return d.x;
+        })
+        .attr("cy", function (d) {
+          return d.y;
+        })
+        .attr("r", 10)
+        .style("fill", "red");
+      var linkLabels = svg
+        .selectAll(".link-label")
+        .data(data.links)
+        .enter()
+        .append("text")
+        .attr("class", "link-label")
+        .attr("x", function (d) {
+          return (
+            (data.nodes.find((node) => node.id === d.source).x +
+              data.nodes.find((node) => node.id === d.target).x) /
+            2
+          );
+        })
+        .attr("y", function (d) {
+          return (
+            (data.nodes.find((node) => node.id === d.source).y +
+              data.nodes.find((node) => node.id === d.target).y) /
+            2
+          );
+        })
+        .text(function (d) {
+          return "Link";
+        })
+        .style("text-anchor", "middle")
+        .style("dominant-baseline", "middle")
+        .style("fill", "black");
+      var labels = svg
+        .selectAll(".label")
+        .data(data.nodes)
+        .enter()
+        .append("text")
+        .attr("class", "label")
+        .attr("x", function (d) {
+          return d.x + 15;
+        })
+        .attr("y", function (d) {
+          return d.y;
+        })
+        .text(function (d) {
+          return d.id;
+        });
+    </script>
   </body>
 </html>
