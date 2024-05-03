@@ -1,4 +1,439 @@
-{% extends 'layout.html' %} {% block content %}
-<h1>Welcome to my Django project</h1>
-<p>This is the homepage</p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Cards</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>TravelAI</title>
+      <!-- CSS FILES -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/slick.css"/>
+
+      <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.6);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .service-title {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+  }
+
+  .service-description {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+  }
+
+  .service-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .custom-service-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .small-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px 0px 10px 0px;
+    background: #DF6951;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .category {
+    font-size: small;
+    color: #5E6282;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .services-heading {
+    font-family: Volkhov;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 64.5px;
+    text-align: center;
+  }
+
+  .service-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .service-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+  .new-service-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new-service-image img {
+    width: 257px;
+    height: 300px;
+    border-radius: 24px 24px 0px 0px;
+  }
+
+  .new-service-card {
+    width: 257px;
+    height: 400px;
+    border-radius: 24px 24px 24px 24px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.6);
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .new-service-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .new-service-description {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .new-service-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+  .service-title {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    display: block;
+  }
+
+  .service-price {
+    font-size: 14px;
+    color: gray;
+    display: block;
+  }
+
+  .service-time {
+    font-size: 12px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .service-time img {
+    width: 12px;
+    height: 12px;
+  }
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="homepage.html">
+            <strong class="text-black mb-3"><span>travel</span>AI</strong>
+        </a>
+
+        <div class="d-lg-none">
+            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="graph.html">Dẫn đường</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="graph.html">Tìm điểm du lịch</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Đăng nhập</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Đăng kí</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="contact.html">VN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </nav>
+
+   <section class="slick-slideshow">   
+    <div class="slick-custom">
+      <img src="images/danang.jpg" class="img-fluid" alt="">
+        <div class="slick-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-10">
+                        <h1 class="slick-title">Cầu Vàng</h1>
+
+                        <p class="lead text-white mt-lg-3 mb-lg-5">Cầu Vàng là 1 điểm tham quan trong quần thể khu du lịch Sun world Ba Na Hills.</p>
+
+                        <a href="graph.html" class="btn custom-btn">Tìm đường ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slick-custom">
+      <img src="images/landscape-4175978_1280.jpg" class="img-fluid" alt="">
+
+        <div class="slick-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-10">
+                        <h1 class="slick-title">Ninh Bình</h1>
+
+                        <p class="lead text-white mt-lg-3 mb-lg-5">Ninh Bình là một trong những danh lam thắng cảnh tại Việt Nam.</p>
+
+                        <a href="graph.html" class="btn custom-btn">Tìm đường ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slick-custom">
+      <img src="images/dalat.jpeg" class="img-fluid" alt="">
+        <div class="slick-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-10">
+                        <h1 class="slick-title">Đà Lạt</h1>
+
+                        <p class="lead text-white mt-lg-3 mb-lg-5">Đà Lạt là địa điểm du lịch mộng mơ nổi tiếng, thu hút nhiều du khách bởi thời tiết, phong cảnh say đắm lòng người.</p>
+
+                        <a href="graph.html" class="btn custom-btn">Tìm đường ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <div class="category">DANH MỤC</div>
+    <div class="services-heading">CÁC DỊCH VỤ</div>
+    <div class="container">
+        <div class="service-card">
+            <div class="service-content">
+                <div class="service-image">
+                    <img src="https://s3-alpha-sig.figma.com/img/2380/b5e9/ee9d2e289e8c42fc0ddd7264a4095dab?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UqMg6O7sbkWRK1ds1BWwPQgF5GLqUeVLilylkoCPKCWxjBuUYEMSoyjdoC0xPSSphNkW--tZ-kLTvmO8TvKRHsxV9vec0evohFqpVNLJeCSqq0X9UFDrmn7uSATTmTnDoWSsO9rwW1YfQVZTd3ZK8woXUpRrBKQCzrkJwfy-V-Glo5QSsNRJfXkFzx3r~GRbK-ZJUdqsB77q2n1Y9Dkm9yHXEsRKqFoTgctG9tt9A3shl7dKhwJGYp5ESudMl5r3yvbHLoKcu2JGmDNBy9OT9b-QtlMuTu2wzAd5MstGcgZSlwDDymLdF8jbNziwOdzUILPmM9bWfGSqJ88TOR1yYw__"
+                        alt="Gợi ý đường đi">
+                </div>
+                <div class="service-description">
+                    <strong class="service-title">Gợi ý đường đi</strong>
+                    <p>Dựa vào vị trí hiện tại để tìm các địa điểm du lịch gần đó</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="service-image">
+                    <img src="https://s3-alpha-sig.figma.com/img/4c25/b532/a7e3c12cef861c9816ab51f2f359971a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m8UqjrAD-R52AotDskQ88lxTq6MXO2ovJmhFeJjXrUPVv8Ui0h9Xuclm7XcwUJN1dyjUZhmUjaISWl8DxGBZYWqXreumsPhffYd7crc1~AFBq8PUBf~AICor1e8g7HpEe9DEAIFzle-LSfuv4qfPEP~pyVYlPjVz9FGA~lIBFezbDSB5Bi0GGWuFfna6GZ0tlwTMqHncI6vMGPTSvmWmduoxUDxcPWU~LvnB5sSUG~11NKgnJXebVYa4YkjeIF9n1Ge7VyeAXIQV13eHiEl3XHSxd6n804RZIdLrHpo09ZdjTnBe6AZKF9tfWCi2hc10zjB9y7tJu1lwpOUo5naKzw__"
+                        alt="Tìm địa điểm du lịch">
+                </div>
+                <div class="service-description">
+                    <strong class="service-title">Tìm địa điểm du lịch</strong>
+                    <p>Dựa vào vị trí hiện tại để tìm các địa điểm du lịch gần đó</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="service-image">
+                    <img src="https://s3-alpha-sig.figma.com/img/dce0/7bad/fdd6efc180239248acb5a698a0e94900?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L3AIyf-LbS-FjcjhtgdJ1g8etkXbZ8rDCoUWNDjwiGU9hKWMWBEBEWiDT71gcJwDY1ugcxgqggpLMdO5F8A13AV-zMgeES~l1mXP4BrfiDtZFHLX2yZ-lS5Fc~b1orw4NyRvcZ0hMbwCf0YNtqyKFzBhgmWc7ViysgcMyqziAHME0GpR050qY0EZ4TXuNRjqtDgGecXQHrAjyllp7cMeA7Gmaa4SyxspsMnjPEI1r9EMhK5ePzHO7TDjc3PlmaJYkkRuYCLvFhUxLCBrqjxMfZ~oOa1Ht2utSo2eKSbwsPGAx7jkEz2RqtmnZFG6b5ZL7UNVBVncOsTjbw8c6nZDEQ__"
+                alt="Tiết kiệm chi phí">
+                </div>
+                <div class="service-description">
+                    <strong class="service-title">Tiết kiệm chi phí</strong>
+                    <p>We deliver outsourced aviation services for military customers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="custom-service-image">
+                    <img src="https://cdn-icons-png.flaticon.com/256/1057/1057097.png"
+                alt="Customization">
+                </div>
+                <div class="service-description">
+                    <strong class="service-title">Customization</strong>
+                    <p>We deliver outsourced aviation services for military customers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="category">GỢI Ý</div> <!-- Thêm phần DANH MỤC -->
+<div class="services-heading">ĐỊA ĐIỂM HOT NHẤT TRONG TUẦN</div> <!-- Thêm tiêu đề -->
+<div class="container">
+    <div class="new-service-card">
+      <div class="new-service-content">
+        <div class="new-service-image">
+          <img src="https://s3-alpha-sig.figma.com/img/0e23/1710/eeda3ae97ec8ee4f4127e821934fb028?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aUgjWCZ0ALZS9VVZK5H4zTxn3RggsYZF5oMsoiUZDcIj0NDA~NkU~QK4-WhEj4edn-1SAw6HXSwQuDjhT6j291mOcIgHM2X85PPkRKPrjGV4nkRB282hsO9E7E-K79hIcSZs7ge76bKezzIZTb0QIAy3Nk9JgjEs~rm04aYZ9u17~M0kgDUfgw0cDvhNhcm7EwT2Hk9cWk8Hz2FQ8yFgV~KU3aMRc5zow6RBU8qJuFa9aY9aE9qLDt7-D2hcUe6EZQmjLx3OwbEcsOvz-scpOMRBs-0KIxuxacJqzfRiD5W3jp2WLQ7SGf6g4h4uN~68m7hBKVAWJHef21GiHcvrqw__" alt="Đà Lạt">
+        </div>
+        <div class="new-service-description">
+          <span class="service-title">Đà Lạt, Lâm Đồng</span>
+          <span class="service-price">$5.42k</span>
+          <span class="service-time">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/388/806/original/clock-icon-time-symbol-free-vector.jpg" alt="symbol"> 10 Days Trip
+          </span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="new-service-card">
+      <div class="new-service-content">
+        <div class="new-service-image">
+          <img src="https://s3-alpha-sig.figma.com/img/8a29/bbdd/239efc15808d312475374fe05f9c140a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZoEzTkYS2fCXL8EWSUvkCaLBSYU1IArsDjGxDlByJY6JMBa71dex94Wdbr8o6O319EUZxIGtOzSF~nMPDIQzJXwwrs33xS6oWgDmQfjH4rXQnSvN4vZ59tHP0mp3tTlh6EX0~Gl29LYmPrfK0sbzZOSEScdASKQALXCfYglDX2QVYTncNFLLaelW2xzuDzmiwIa-48HW6~E6AcyjoNAIz-7cdyDwxaj3xtn-XD9d3PW61fp1loSTm~G18rV25edio95oQmX9c2kbTBAZMVKsJRTdoLlxq~3zLPsIQQhcrnKsLkOWMugP4X9kJ5lt~ZKnfdJOEffueVv5lqPkXvUHsQ__" alt="Phú Quốc">
+        </div>
+        <div class="new-service-description">
+          <span class="service-title">Phú Quốc, Kiên Giang</span>
+          <span class="service-price">$4.2k</span>
+          <span class="service-time">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/388/806/original/clock-icon-time-symbol-free-vector.jpg" alt="symbol"> 12 Days Trip
+          </span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="new-service-card">
+      <div class="new-service-content">
+        <div class="new-service-image">
+          <img src="https://s3-alpha-sig.figma.com/img/ad7d/dd1f/7fcf75a99715b86d7d5764d935e8e828?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oeEqADquoyO-5-HPzMC-8ftQQHPYIbsJJSxIuXXMp5RHW8iacMRdWsm7q1OF153ZTicRfivJm3RkTNMUXLEPPiHieITMYUsTleyffAPa4G0vqmmlxLXTwV01Q3uivoTovyvsIBXLsQiAzHDo757auNuBbh-oKIBg9B3XFyqX8OJX1wkzhBNngvZgmp5J-gw2lI37L7XerXBET~BL3QIprAnkj9IL0vyOnRjACBoxpYaZQ5YrV62TOKjs0F~0eqVlBSQMT9O8X5o7GTm4npc1Mu90bCpoo8SIW2JW0pDg84DryksVzYmIKuB817PeMmI3IvQnJZFehdaaoamDxTwmsw__" alt="Sa Pa">
+        </div>
+        <div class="new-service-description">
+          <span class="service-title">Sa Pa, Lào Cai</span>
+          <span class="service-price">$15k</span>
+          <span class="service-time">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/388/806/original/clock-icon-time-symbol-free-vector.jpg" alt="symbol"> 28 Days Trip
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-10 me-auto mb-4">
+                <h4 class="text-white mb-3"><a href="index.html">travel</a>AI</h4>
+                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Group 20</strong></p>
+                <br>
+            </div>
+
+            <div class="col-lg-5 col-8">
+                <h5 class="text-white mb-3">Sitemap</h5>
+
+                <ul class="footer-menu d-flex flex-wrap">
+                    <li class="footer-menu-item"><a href="homepage.html" class="footer-menu-link">Trang chủ</a></li>
+
+                    <li class="footer-menu-item"><a href="graph.html" class="footer-menu-link">Dẫn đường</a></li>
+
+                    <li class="footer-menu-item"><a href="graph.html" class="footer-menu-link">Tìm điểm du lịch</a></li>
+
+                    <li class="footer-menu-item"><a href="login.html" class="footer-menu-link">Đăng nhập</a></li>
+
+                    <li class="footer-menu-item"><a href="register.html" class="footer-menu-link">Đăng kí</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-4">
+                <h5 class="text-white mb-3">Social</h5>
+
+                <ul class="social-icon">
+
+                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+     <!-- JAVASCRIPT FILES -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/Headroom.js"></script>
+     <script src="js/jQuery.headroom.js"></script>
+     <script src="js/slick.min.js"></script>
+     <script src="js/custom.js"></script>
+</body>
+</html>
+
