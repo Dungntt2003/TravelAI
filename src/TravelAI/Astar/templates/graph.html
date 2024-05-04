@@ -1,3 +1,4 @@
+{% extends 'layout.html' %} {% block content %} {% load static %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,18 +6,34 @@
     <meta name="viewport" content="initial-scale=1.0" />
     <meta charset="utf-8" />
     <style>
-      #map {
-        height: 100%;
-      }
       html,
       body {
         height: 100%;
         margin: 0;
         padding: 0;
       }
+      .graph-container {
+        margin: 100px 100px 50px;
+      }
+      .map-content {
+        display: flex;
+        justify-content: space-between;
+      }
+      .graph-form {
+        margin-left: 50px;
+        width: 100%;
+        padding: 32px;
+      }
+      .graph-form-header {
+        font-size: 25px;
+        font-weight: 400;
+      }
+      #map {
+        height: 100%;
+      }
       .image-container {
         width: 400px;
-        overflow: hidden;
+        /* overflow: hidden; */
       }
 
       .product-image {
@@ -26,32 +43,73 @@
         cursor: zoom-in;
       }
       .zoomed {
-        transform: scale(2.5);
+        transform: scale(1.6);
+      }
+      .graph-form button {
+        padding: 8px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ff4400;
+        color: white;
+        margin-top: 16px;
+      }
+      .map-recommend {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 40px;
+        box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        min-height: 100px;
+      }
+      .map-recommend-header {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+      .directions-panel {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 40px;
+        box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        min-height: 100px;
       }
     </style>
   </head>
   <body>
-    <div id="map" style="width: 50%; height: 100vh; float: left"></div>
-    <div id="form" style="width: 50%; float: right">
-      <h2>Điểm đầu và điểm cuối</h2>
-      <form id="directions-form">
-        <label for="start">Điểm đầu:</label>
-        <input type="text" id="start" name="start" required />
+    <div class="graph-container">
+      <div class="map-content">
+        <div class="image-container" id="image-container">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0bb2e674192bf6131f07f4ec2d6458d42d1c4a216596beac6514222b5a8a4be?apiKey=ffc2b1564c644340a68e4591e1bff550&"
+            alt="Product Image"
+            class="product-image"
+            style="width: 450px"
+            id="zoom-image"
+          />
+        </div>
+        <div id="form" class="graph-form">
+          <h2 class="graph-form-header">Chọn tuyến đường</h2>
+          <form id="directions-form">
+            <label for="start">Địa điểm bắt đầu: </label>
+            <input type="text" id="start" name="start" required />
+            <br />
+            <label for="end">Địa điểm kết thúc: </label>
+            <input type="text" id="end" name="end" required />
 
-        <label for="end">Điểm cuối:</label>
-        <input type="text" id="end" name="end" required />
+            <br />
 
-        <button type="submit">Tìm đường</button>
-        <div id="directions-panel"></div>
-      </form>
-      <div class="image-container" id="image-container">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0bb2e674192bf6131f07f4ec2d6458d42d1c4a216596beac6514222b5a8a4be?apiKey=ffc2b1564c644340a68e4591e1bff550&"
-          alt="Product Image"
-          class="product-image"
-          style="width: 400px"
-          id="zoom-image"
-        />
+            <button type="submit">Tìm kiếm</button>
+            <h3 class="map-recommend-header">
+              Đường đi qua các tỉnh do hệ thống đề xuất:
+            </h3>
+            <div class="map-recommend"></div>
+            <div class="directions-panel"></div>
+          </form>
+        </div>
+      </div>
+      <div class="google-map">
+        <div id="map" style="width: 100%; height: 80vh"></div>
       </div>
     </div>
 
@@ -118,3 +176,4 @@
     ></script>
   </body>
 </html>
+{% endblock %}
