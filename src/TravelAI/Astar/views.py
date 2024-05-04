@@ -14,3 +14,6 @@ def homepage(request):
 
 def Astar(request):
     return render(request, 'graph.html')
+
+def test(request):
+    return render(request, 'test.html')

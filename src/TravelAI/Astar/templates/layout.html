@@ -1,120 +1,175 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>TravelAI</title>
-      <!-- CSS FILES -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static '/css/bootstrap-icons.css' %}" rel="stylesheet" />
 
-      <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}" />
 
-      <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-
+    <link
+      href="{% static '/css/tooplate-little-fashion.css' %}"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg">
+    <nav
+      class="navbar navbar-expand-lg"
+      style="border-bottom: 1px solid #ece6e6"
+    >
       <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <a class="navbar-brand" href="homepage.html">
-              <strong class="text-black mb-3"><span>travel</span>AI</strong>
-          </a>
+        <a class="navbar-brand" href="/Astar/homepage">
+          <strong class="text-black mb-3"><span>travel</span>AI</strong>
+        </a>
 
-          <div class="d-lg-none">
-              <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+        <div class="d-lg-none">
+          <a href="/Astar/register" class="bi-person custom-icon me-3"></a>
 
-              <a href="product-detail.html" class="bi-bag custom-icon"></a>
-          </div>
+          <a href="/Astar/homepage" class="bi-bag custom-icon"></a>
+        </div>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="graph.html">Dẫn đường</a>
-                  </li>
+        <div
+          class="collapse navbar-collapse"
+          style="margin-left: 410px; font-weight: 400"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/Astar/graph">Dẫn đường</a>
+            </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="graph.html">Tìm điểm du lịch</a>
-                  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Astar/graph">Tìm điểm du lịch</a>
+            </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="login.html">Đăng nhập</a>
-                  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Astar/login">Đăng nhập</a>
+            </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="register.html">Đăng kí</a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link" href="contact.html">VN</a>
-                  </li>
-              </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link" href="/Astar/register">Đăng kí</a>
+            </li>
+          </ul>
+        </div>
       </div>
-     </nav>
-     
-     <footer class="site-footer">
+    </nav>
+
+    <main>{% block content %}{% endblock %}</main>
+    <footer class="site-footer">
       <div class="container">
-          <div class="row">
-
-              <div class="col-lg-3 col-10 me-auto mb-4">
-                  <h4 class="text-white mb-3"><a href="index.html">travel</a>AI</h4>
-                  <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Group 20</strong></p>
-                  <br>
-              </div>
-
-              <div class="col-lg-5 col-8">
-                  <h5 class="text-white mb-3">Sitemap</h5>
-
-                  <ul class="footer-menu d-flex flex-wrap">
-                      <li class="footer-menu-item"><a href="homepage.html" class="footer-menu-link">Trang chủ</a></li>
-
-                      <li class="footer-menu-item"><a href="graph.html" class="footer-menu-link">Dẫn đường</a></li>
-
-                      <li class="footer-menu-item"><a href="graph.html" class="footer-menu-link">Tìm điểm du lịch</a></li>
-
-                      <li class="footer-menu-item"><a href="login.html" class="footer-menu-link">Đăng nhập</a></li>
-
-                      <li class="footer-menu-item"><a href="register.html" class="footer-menu-link">Đăng kí</a></li>
-                  </ul>
-              </div>
-
-              <div class="col-lg-3 col-4">
-                  <h5 class="text-white mb-3">Social</h5>
-
-                  <ul class="social-icon">
-
-                      <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                      <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                      <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                      <li><a href="#" class="social-icon-link bi-skype"></a></li>
-                  </ul>
-              </div>
-
+        <div class="row">
+          <div class="col-lg-3 col-10 me-auto mb-4">
+            <h4 class="text-white mb-3">
+              <a href="/Astar/homepage">travel</a>AI
+            </h4>
+            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
+              Copyright © <strong>G20</strong>
+            </p>
+            <br />
           </div>
+
+          <div class="col-lg-5 col-8">
+            <h5 class="text-white mb-3">Sitemap</h5>
+
+            <ul class="footer-menu d-flex flex-wrap">
+              <li class="footer-menu-item">
+                <a href="/Astar/homepage" class="footer-menu-link">Trang chủ</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="/Astar/graph" class="footer-menu-link">Dẫn đường</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="/Astar/graph" class="footer-menu-link"
+                  >Tìm điểm du lịch</a
+                >
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="/Astar/login" class="footer-menu-link">Đăng nhập</a>
+              </li>
+
+              <li class="footer-menu-item">
+                <a href="/Astar/register" class="footer-menu-link">Đăng kí</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-4">
+            <h5 class="text-white mb-3">Social</h5>
+
+            <ul class="social-icon">
+              <li>
+                <a
+                  href="/Astar/homepage"
+                  class="social-icon-link bi-youtube"
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="/Astar/homepage"
+                  class="social-icon-link bi-whatsapp"
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="/Astar/homepage"
+                  class="social-icon-link bi-instagram"
+                ></a>
+              </li>
+
+              <li>
+                <a href="/Astar/homepage" class="social-icon-link bi-skype"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </footer>
-     <!-- JAVASCRIPT FILES -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.bundle.min.js"></script>
-     <script src="js/Headroom.js"></script>
-     <script src="js/jQuery.headroom.js"></script>
-     <script src="js/slick.min.js"></script>
-     <script src="js/custom.js"></script>
+    </footer>
+    <!-- JAVASCRIPT FILES -->
+    <script src="{% static '/js/jquery.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static '/js/Headroom.js' %}"></script>
+    <script src="{% static '/js/jQuery.headroom.js' %}"></script>
+    <script src="{% static '/js/slick.min.js' %}"></script>
+    <script src="{% static '/js/slick.min.js' %}"></script>
   </body>
 </html>
