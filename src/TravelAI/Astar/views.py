@@ -1,10 +1,8 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-
-# def Hello(request):
-#     return HttpResponse("Hello, world. You're at the polls index.")
+from django.shortcuts import redirect, render
+# from .models import Student
 
 def register(request):
+
     return render(request, 'register.html')
 def login(request):
     return render(request, 'login.html')
@@ -15,5 +13,4 @@ def homepage(request):
 def Astar(request):
     return render(request, 'graph.html')
 
-def test(request):
-    return render(request, 'test.html')
+
