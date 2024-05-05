@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'TravelAI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'student',
+        'NAME': 'TravelAI',
         'USER': 'postgres',
         'PASSWORD': '123456',
         'HOST': 'localhost',
