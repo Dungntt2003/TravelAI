@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'TravelAI',
         'USER': 'postgres',
-        'PASSWORD': '123456',
+        'PASSWORD': '123456', 
         'HOST': 'localhost',
         'PORT' : '5432'
     }
