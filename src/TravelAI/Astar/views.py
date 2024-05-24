@@ -58,4 +58,7 @@ def homepage(request):
 def Astar(request):
     return render(request, 'graph.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 
