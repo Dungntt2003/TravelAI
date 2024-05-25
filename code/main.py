@@ -9,4 +9,4 @@ from ulities import getPath
 
 graph1 = Graph(road_distances)
 path = graph1.a_star_algorithm(start_city, dest_city)
-getPath(path)
+# getPath(path)
