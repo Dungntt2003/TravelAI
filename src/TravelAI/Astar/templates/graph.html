@@ -20,12 +20,12 @@
         justify-content: space-between;
       }
       .graph-form {
-        margin-left: 50px;
+        margin-left: 150px;
         width: 100%;
-        padding: 32px;
+        padding: 16px 32px 32px;
       }
       .graph-form-header {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 400;
       }
       #map {
@@ -59,7 +59,9 @@
         border-radius: 40px;
         box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
         background-color: white;
-        min-height: 100px;
+        /* min-height: 100px; */
+        padding: 24px 12px;
+        font-size: 20px;
       }
       .map-recommend-header {
         font-size: 20px;
@@ -74,6 +76,19 @@
         background-color: white;
         min-height: 100px;
       }
+      .map-recommend-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .map-recommend-item {
+        display: inline-block;
+        margin: 0 12px;
+        min-width: 50px;
+        padding: 0;
+        /* margin: 0; */
+      }
     </style>
   </head>
   <body>
@@ -84,26 +99,32 @@
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0bb2e674192bf6131f07f4ec2d6458d42d1c4a216596beac6514222b5a8a4be?apiKey=ffc2b1564c644340a68e4591e1bff550&"
             alt="Product Image"
             class="product-image"
-            style="width: 450px"
+            style="width: 500px"
             id="zoom-image"
           />
         </div>
         <div id="form" class="graph-form">
           <h2 class="graph-form-header">Chọn tuyến đường</h2>
-          <form id="directions-form">
-            <label for="start">Địa điểm bắt đầu: </label>
-            <input type="text" id="start" name="start" required />
-            <br />
-            <label for="end">Địa điểm kết thúc: </label>
-            <input type="text" id="end" name="end" required />
-
-            <br />
+          <form id="directions-form" method="post">
+            {% csrf_token %} {{ form.as_p }}
 
             <button type="submit">Tìm kiếm</button>
+          </form>
             <h3 class="map-recommend-header">
-              Đường đi qua các tỉnh do hệ thống đề xuất:
+              Đường đi qua các thành phố do hệ thống đề xuất:
             </h3>
-            <div class="map-recommend"></div>
+            <div class="map-recommend">
+              {% if path %}
+              <ul class="map-recommend-list">
+                  {% for node in path %}
+                      <li class="map-recommend-item">{{ node }} -></li>
+                  {% endfor %}
+                  <li class="map-recommend-item">Kết thúc</li>
+              </ul>
+          {% else %}
+              <p>No path found.</p>
+          {% endif %}
+            </div>
             <div class="directions-panel"></div>
           </form>
         </div>
@@ -131,6 +152,14 @@
         });
       });
 
+    //     var form = document.getElementById("directions-form");
+    //       form.addEventListener("submit", function (event) {
+    //         event.preventDefault();
+    //         var startCity = document.getElementById("startCity").value;
+    // var endCity = document.getElementById("endCity").value;
+    // calculateAndDisplayRoute(directionsService, directionsRenderer, startCity, endCity);
+    //       });
+      
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
@@ -142,32 +171,32 @@
         var directionsRenderer = new google.maps.DirectionsRenderer();
         directionsRenderer.setMap(map);
 
-        var form = document.getElementById("directions-form");
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-          calculateAndDisplayRoute(directionsService, directionsRenderer);
-        });
-      }
+          var form = document.getElementById("directions-form");
+          form.addEventListener("submit", function (event) {
+            // event.preventDefault();
+    //         var startCity = document.getElementById("id_startCity").value;
+    //  var endCity = document.getElementById("id_endCity").value;
+    // calculateAndDisplayRoute(directionsService, directionsRenderer, startCity, endCity);
+          });
+        }
 
-      function calculateAndDisplayRoute(directionsService, directionsRenderer) {
-        var start = document.getElementById("start").value;
-        var end = document.getElementById("end").value;
-
-        directionsService.route(
-          {
-            origin: start,
-            destination: end,
+      // 
+      function calculateAndDisplayRoute(directionsService, directionsRenderer, startCity, endCity) {
+    directionsService.route(
+        {
+            origin: startCity,
+            destination: endCity,
             travelMode: google.maps.TravelMode.DRIVING,
-          },
-          function (response, status) {
+        },
+        function (response, status) {
             if (status === "OK") {
-              directionsRenderer.setDirections(response);
+                directionsRenderer.setDirections(response);
             } else {
-              window.alert("Không tìm thấy đường đi. Vui lòng thử lại.");
+                window.alert("Không tìm thấy đường đi. Vui lòng thử lại.");
             }
-          }
-        );
-      }
+        }
+    );
+}
     </script>
     <script
       src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.6/mapsJavaScriptAPI.js"
