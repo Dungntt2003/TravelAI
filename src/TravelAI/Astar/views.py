@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from django.contrib.auth import authenticate, login as auth_login
 from .forms import MyForm
 from .algorithm.Astar import Graph
 from .algorithm.dataDis import road_distances
@@ -31,6 +32,7 @@ from .models import User
 #         #     raise forms.ValidationError('Email đã tồn tại. Vui lòng đăng nhập.')
 #         return cleaned_data
 
+
 def register(request):
     if request.method == 'POST':
         email = request.POST.get('email')
@@ -52,11 +54,25 @@ def register(request):
         return redirect('login')
     return render(request, 'register.html')
 
-def login(request):
-    return render(request, 'login.html')
+def user_login(request):  # Rename function
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            auth_login(request, user)  # Use the renamed import
+            # Make sure this points to a defined URL name
+            return redirect('homepage')
+        else:
+            return render(request, 'login.html', {
+                'error': 'Invalid username or password'
+            })
+    else:
+        return render(request, 'login.html')
 
 def homepage(request):
     return render(request, 'homepage.html')
+
 
 def Astar(request):
     if request.method == 'POST':
@@ -80,5 +96,4 @@ def Astar(request):
 
 def about(request):
     return render(request, 'about.html')
-
 
