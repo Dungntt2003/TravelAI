@@ -10,7 +10,7 @@ from django.db import models
 #     def __str__(self):
 #         return self.name
     
-class User(models.Model):
+class Astar_user(models.Model):
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=255)
     def __str__(self):

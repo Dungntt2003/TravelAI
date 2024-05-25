@@ -24,14 +24,17 @@
         <!--          {% endfor %}-->
         <!--        </div>-->
         <!--        {% endif %}-->
+        {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
 
         <div class="auth-form__form">
           <div class="auth-form__group">
             <input
               type="text"
               class="auth-form__input"
-              id="username"
-              name="username"
+              id="email"
+              name="email"
               placeholder="Email"
               required
             />

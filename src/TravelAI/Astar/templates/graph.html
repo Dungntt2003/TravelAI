@@ -41,6 +41,7 @@
         display: block;
         transition: transform 0.5s ease;
         cursor: zoom-in;
+        z-index: 1000;
       }
       .zoomed {
         transform: scale(1.6);
@@ -60,7 +61,7 @@
         box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
         background-color: white;
         /* min-height: 100px; */
-        padding: 24px 12px;
+        padding: 12px 12px;
         font-size: 20px;
       }
       .map-recommend-header {
@@ -74,7 +75,8 @@
         border-radius: 40px;
         box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
         background-color: white;
-        min-height: 100px;
+        max-height: 350px;
+        overflow: auto;
       }
       .map-recommend-list {
         list-style: none;
@@ -115,17 +117,39 @@
             </h3>
             <div class="map-recommend">
               {% if path %}
-              <ul class="map-recommend-list">
+              <ul class="map-recommend-list" style="margin: 0;">
                   {% for node in path %}
                       <li class="map-recommend-item">{{ node }} -></li>
                   {% endfor %}
                   <li class="map-recommend-item">Kết thúc</li>
               </ul>
           {% else %}
-              <p>No path found.</p>
+              <p style="margin-bottom: 0;">Chưa có đường đi</p>
           {% endif %}
             </div>
-            <div class="directions-panel"></div>
+            <div class="directions-panel">
+              {% if dataList %}
+              <ul class="map-recommend-list">
+                    {% for node in  dataList%}
+                        <li">
+                          <div>
+                            {% for item in node.tourist_spots%}
+                        <li>
+                          <h6>
+                            {{item.name}}
+                          </h6>
+                          <p style="margin: 6px 0; font-size: 16px;">{{item.address}}</p>
+                          <p style="margin: 6px 0; font-size: 16px;">{{item.description}}</p>
+                        </li>
+                    {% endfor %}
+                        </div>
+                      </li>
+                  {% endfor %}
+                  </ul>
+              {% else %}
+                  <p style="margin-bottom: 0; padding: 12px;">Chưa có gợi ý</p>
+              {% endif %}
+            </div>
           </form>
         </div>
       </div>

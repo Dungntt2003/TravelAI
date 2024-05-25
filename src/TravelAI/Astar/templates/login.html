@@ -1,42 +1,67 @@
-{% extends 'layout.html' %}
-
-{% block content %}
-{% load static %}
+{% extends 'layout.html' %} {% block content %} {% load static %}
 <link rel="stylesheet" href="{% static '/css/main.css' %}" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
 
 <div class="modal-container-special">
   <div class="modal__body">
     <div class="auth-form">
+      <!-- action="{% url 'login' %}" -->
       <div class="auth-form__container">
-        <form method="POST" action="{% url 'login' %}">
+        <form method="POST">
           {% csrf_token %}
           <div class="auth-form__header">
             <div class="auth-form__heading">Đăng nhập</div>
             <div>
-              <a href="/Astar/register" class="auth-form__switch-btn">Đăng ký</a>
+              <a href="/Astar/register" class="auth-form__switch-btn"
+                >Đăng ký</a
+              >
             </div>
           </div>
-
+          {% if error %}
+          <div class="alert alert-danger">{{ error }}</div>
+          {% endif %}
           <div class="auth-form__form" style="margin-top: 20px">
             <div class="auth-form__group">
-              <input type="text" name="username" class="auth-form__input" placeholder="Email" required />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="auth-form__input"
+                placeholder="Email"
+                required
+              />
             </div>
             <div class="auth-form__group">
-              <input type="password" name="password" class="auth-form__input" placeholder="Mật khẩu" required />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="auth-form__input"
+                placeholder="Mật khẩu"
+                required
+              />
             </div>
           </div>
 
           <div class="auth-form__aside">
             <div class="auth-form__help">
-              <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+              <a href="" class="auth-form__help-link auth-form__help-forgot"
+                >Quên mật khẩu</a
+              >
               <span class="auth-form__help-separate"></span>
               <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
             </div>
           </div>
 
           <div class="auth-form__controls">
-            <button type="submit" class="btn btn--primary" style="font-size: 16px">
+            <button
+              type="submit"
+              class="btn btn--primary"
+              style="font-size: 16px"
+            >
               ĐĂNG NHẬP
             </button>
           </div>
@@ -44,11 +69,15 @@
       </div>
 
       <div class="auth-form__socials">
-        <button class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+        <button
+          class="auth-form__socials--facebook btn btn--size-s btn--with-icon"
+        >
           <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
           <p class="auth-form__socials-title">Kết nối với Facebook</p>
         </button>
-        <button class="auth-form__socials--google btn btn--size-s btn--with-icon">
+        <button
+          class="auth-form__socials--google btn btn--size-s btn--with-icon"
+        >
           <i class="auth-form__socials-icon fa-brands fa-google"></i>
           <p class="auth-form__socials-title auth-form__socials-google">
             Kết nối với Google

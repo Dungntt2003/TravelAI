@@ -55,6 +55,12 @@ def goBack(path, city):
     except ValueError:
         print(f"The city {city} is not found in the path.")
         return None
+    
+def filter_data_by_path(path, data):
+    filtered_data = []
+    for item in data:
+        if item['name'] in path:
+            filtered_data.append(item)
+    return filtered_data
 
-# path = ["Ha Noi", "Hai Phong", "Da Nang", "Nha Trang", "TP Ho Chi Minh"]
-# getPath(path)
+
