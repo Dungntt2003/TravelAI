@@ -1,14 +1,11 @@
 from django.shortcuts import redirect, render
-<<<<<<< HEAD
 from .forms import MyForm
 from .algorithm.Astar import Graph
 from .algorithm.dataDis import road_distances
-=======
 from django import forms
 from django.core.exceptions import ValidationError
 from django.contrib import messages
 from django.contrib.auth.hashers import make_password
->>>>>>> b03931f57251ca55e74c036e918aa50b4f85df94
 # from .models import Student
 from .models import User
 
